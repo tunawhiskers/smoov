@@ -1,0 +1,33 @@
+body {
+    overflow: hidden;
+    margin: 0px;
+}
+#vslider {
+    -webkit-appearance: slider-vertical;
+    height: 60vh;    
+}
+
+#slidercontainer {
+    margin-left: 10px;
+    padding-top: 10vh;
+}
+
+#body_check {
+    text-align: center;
+}
+
+#checkbox {
+    width: 25px;
+    height: 25px;
+}
+
+#container {
+    position: relative;
+
+}
+#overlay {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 1;
+}
