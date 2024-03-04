@@ -10,17 +10,43 @@ body {
     position: fixed;
     bottom: 20px; /* adjust as needed */
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
     width: 100%;
 }
 
 #slidercontainer {
-    margin-right: 10px; /* adjust as needed */
+    margin-bottom: 10px; /* adjust as needed */
+    width: 100%;
 }
 
 #vslider {
-    width: 70%; /* adjust as needed */
+    width: 100%; /* occupy full width */
+    height: 20px; /* adjust height as needed */
+    -webkit-appearance: none; /* Override default appearance */
+    appearance: none;
+    background: #d3d3d3; /* Slider track color */
+    border-radius: 10px; /* Slider track border radius */
+    outline: none; /* Remove outline */
+}
+
+/* Style the thumb icon */
+#vslider::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Override default appearance */
+    appearance: none;
+    width: 25px; /* Adjust width to make the thumb bigger */
+    height: 25px; /* Adjust height to make the thumb bigger */
+    background: #727272; /* Thumb color */
+    border-radius: 50%; /* Make it circular */
+    cursor: pointer; /* Add cursor pointer */
+}
+
+#vslider::-moz-range-thumb {
+    width: 25px; /* Adjust width to make the thumb bigger */
+    height: 25px; /* Adjust height to make the thumb bigger */
+    background: #000000; /* Thumb color */
+    border-radius: 50%; /* Make it circular */
+    cursor: pointer; /* Add cursor pointer */
 }
 
 #body_check {
@@ -30,4 +56,17 @@ body {
 
 label {
     margin-left: 5px; /* adjust as needed */
+}
+
+/* Mobile-friendly styles */
+@media screen and (min-width: 768px) {
+    #slidercontainer {
+        margin-bottom: 0;
+        width: auto; /* reset width */
+    }
+
+    #vslider {
+        width: 500px; /* adjust as needed */
+        height: 25px; /* adjust height as needed */
+    }
 }
