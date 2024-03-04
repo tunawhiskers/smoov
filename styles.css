@@ -1,33 +1,33 @@
 body {
-    overflow: hidden;
-    margin: 0px;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
 }
-#vslider {
-    -webkit-appearance: slider-vertical;
-    height: 60vh;    
+
+#overlay {
+    position: fixed;
+    bottom: 20px; /* adjust as needed */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
 }
 
 #slidercontainer {
-    margin-left: 10px;
-    padding-top: 10vh;
+    margin-right: 10px; /* adjust as needed */
+}
+
+#vslider {
+    width: 70%; /* adjust as needed */
 }
 
 #body_check {
-    text-align: center;
+    display: flex;
+    align-items: center;
 }
 
-#checkbox {
-    width: 25px;
-    height: 25px;
-}
-
-#container {
-    position: relative;
-
-}
-#overlay {
-    position: absolute;
-    top: 20px;
-    left: 20px;
-    z-index: 1;
+label {
+    margin-left: 5px; /* adjust as needed */
 }
